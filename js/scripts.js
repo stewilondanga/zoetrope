@@ -21,14 +21,14 @@ let animations = {
 var posY = getPositions();
 
 frames.forEach((frame, i) => {
-      frame.style.setProperty('--ry', `${(i / framesLength * 360)}deg`);
+  frame.style.setProperty('--ry', `${(i / framesLength * 360)}deg`);
 
-      /*  frame.style.setProperty('--ball-x', `${(5 + i / framesLength * 95)}%`)
-        frame.style.setProperty('--ball-y', `${posY[i]}%`)
-      });
+  frame.style.setProperty('--ball-x', `${(5 + i / framesLength * 95)}%`)
+  frame.style.setProperty('--ball-y', `${posY[i]}%`)
+});
 
-      //If Web Animations API is supported, allow playback control
-      if (frames[0].animate) {
+//If Web Animations API is supported, allow playback control
+/*      if (frames[0].animate) {
         function startZoe() {
           const zoe = frames[0].parentNode;
 
