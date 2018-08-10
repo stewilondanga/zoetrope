@@ -18,9 +18,9 @@ let animations = {
   spin: undefined
 }
 
-/*var posY = getPositions();
+var posY = getPositions();
 
-frames.forEach((frame, i) => {
+/*frames.forEach((frame, i) => {
   frame.style.setProperty('--ry', `${(i / framesLength * 360)}deg`);
 
   frame.style.setProperty('--ball-x', `${(5 + i / framesLength * 95)}%`)
