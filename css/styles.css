@@ -24,12 +24,12 @@ body {
   height: 1.5em;
 }
 
-/*:root {
+:root {
   --flash-duration: 16.66666667ms;
   --zoe-angle: -2deg;
 }
 
-ol {
+/*ol {
   list-style: none;
   --w: 11vmin;
   --h: 8vmin;
