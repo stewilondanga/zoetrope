@@ -87,11 +87,11 @@ form p {
   flex-direction: column;
 }
 
-/*input[type=range] {
+input[type=range] {
   max-width: 15rem;
 }
 
-.no-waapi form {
+/*.no-waapi form {
   display: none;
 }
 
