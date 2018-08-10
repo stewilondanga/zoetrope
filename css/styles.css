@@ -20,11 +20,11 @@ body {
   height: 2.5em;
 }
 
-/*.my_social a img {
+.my_social a img {
   height: 1.5em;
 }
 
-:root {
+/*:root {
   --flash-duration: 16.66666667ms;
   --zoe-angle: -2deg;
 }
