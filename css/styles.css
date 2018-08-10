@@ -41,7 +41,7 @@ ol {
   animation: spin 300ms infinite linear;
 }
 
-/*li {
+li {
   position: absolute;
   top: 0;
   left: 0;
@@ -56,7 +56,7 @@ ol {
   background-position: 50% var(--bpos, 0);
 }
 
-@keyframes spin {
+/*@keyframes spin {
   0% {
     transform: rotateX(var(--zoe-angle)) rotateY(0deg);
   }
