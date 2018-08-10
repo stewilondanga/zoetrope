@@ -34,51 +34,51 @@ if (frames[0].animate) {
 
     if (zoe.animate) {
       animations.spin = zoe.animate({
-            transform: [
-              'rotateX(var(--zoe-angle)) rotateY(0deg)',
-              'rotateX(var(--zoe-angle)) rotateY(360deg)'
-            ]
-          }, {
-            /*              duration: spinDuration,
-                          iterations: Infinity
-                        });
-                      }
-                    }
+        transform: [
+          'rotateX(var(--zoe-angle)) rotateY(0deg)',
+          'rotateX(var(--zoe-angle)) rotateY(360deg)'
+        ]
+      }, {
+        duration: spinDuration,
+        iterations: Infinity
+      });
+    }
+  }
 
-                    startZoe();
+  /*            startZoe();
 
-                    let output = document.getElementById('rate-output');
-                    document.getElementById('rate').addEventListener('input', function(e) {
-                      var value = parseFloat(e.currentTarget.value);
-                      if (animations.spin.updatePlaybackRate) {
-                        animations.spin.updatePlaybackRate(value);
-                      } else {
-                        animations.spin.playbackRate = value;
-                      }
-                      output.value = `Current: ${value}x`;
-                      //, Spin Duration: ${Math.round(1 / value * spinDuration)}ms`;
-                    });
-                  } else {
-                    document.documentElement.classList.add('no-waapi');
-                  }
-
-
+              let output = document.getElementById('rate-output');
+              document.getElementById('rate').addEventListener('input', function(e) {
+                var value = parseFloat(e.currentTarget.value);
+                if (animations.spin.updatePlaybackRate) {
+                  animations.spin.updatePlaybackRate(value);
+                } else {
+                  animations.spin.playbackRate = value;
+                }
+                output.value = `Current: ${value}x`;
+                //, Spin Duration: ${Math.round(1 / value * spinDuration)}ms`;
+              });
+            } else {
+              document.documentElement.classList.add('no-waapi');
+            }
 
 
-                  //adapted from Val Head's demos on Easing: https://codepen.io/valhead/pen/mBxYQV?editors=0010
-                  function getPositions() {
-                    let positions = [];
-                    const startValue = 12.5;
-                    const endValue = 95;
-                    const changeInValue = endValue - startValue;
-                    const totalIterations = framesLength / 2;
 
-                    for (let i = 0; i < totalIterations; ++i) {
-                      positions.push(easeInQuad(i, startValue, changeInValue, totalIterations));
-                    }
-                    return [...(positions.slice().reverse()), ...positions];
-                  }
 
-                  function easeInQuad(currentIteration, startValue, changeInValue, totalIterations) {
-                    return changeInValue * (currentIteration /= totalIterations) * currentIteration + startValue;
-                  }
+            //adapted from Val Head's demos on Easing: https://codepen.io/valhead/pen/mBxYQV?editors=0010
+            function getPositions() {
+              let positions = [];
+              const startValue = 12.5;
+              const endValue = 95;
+              const changeInValue = endValue - startValue;
+              const totalIterations = framesLength / 2;
+
+              for (let i = 0; i < totalIterations; ++i) {
+                positions.push(easeInQuad(i, startValue, changeInValue, totalIterations));
+              }
+              return [...(positions.slice().reverse()), ...positions];
+            }
+
+            function easeInQuad(currentIteration, startValue, changeInValue, totalIterations) {
+              return changeInValue * (currentIteration /= totalIterations) * currentIteration + startValue;
+            }
