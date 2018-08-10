@@ -1,4 +1,4 @@
-body {
+/*body {
   text-align: center;
   font-family: courier;
   background-image: url("../assets/image.jpeg");
@@ -19,6 +19,88 @@ body {
 
 .my_social a img {
   height: 1.5em;
+}
+
+:root {
+  --flash-duration: 16.66666667ms;
+  --zoe-angle: -2deg;
+}
+
+ol {
+  list-style: none;
+  --w: 11vmin;
+  --h: 8vmin;
+  --zoe-radius: 28.25vmin;
+  width: var(--w);
+  height: var(--h);
+  position: relative;
+  transform-style: preserve-3d;
+  animation: spin 300ms infinite linear;
+}
+
+li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: var(--w);
+  height: var(--h);
+  transform-style: preserve-3d;
+  transform: rotateY(var(--ry, 0deg)) translateZ(var(--zoe-radius));
+  --ball-x: 50%;
+  --ball-y: 50%;
+  background-image: radial-gradient(circle at var(--ball-x) var(--ball-y), cyan 1vmin, transparent 1vmin);
+  background-repeat: no-repeat;
+  background-position: 50% var(--bpos, 0);
+}
+
+@keyframes spin {
+  0% {
+    transform: rotateX(var(--zoe-angle)) rotateY(0deg);
+  }
+  100% {
+    transform: rotateX(var(--zoe-angle)) rotateY(360deg);
+  }
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  perspective: 100vmin;
+  background: radial-gradient(circle, hsl(177, 80%, 20%), hsl(177, 80%, 10%));
+  font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+form {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  color: #fdfeff;
+  font-family: system-ui, 'Segoe UI', -apple-system, sans-serif;
+  background: hsla(0, 0%, 0%, .2);
+}
+
+form p {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type=range] {
+  max-width: 15rem;
+}
+
+.no-waapi form {
+  display: none;
 }
 
 .containers {
