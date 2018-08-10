@@ -66,19 +66,19 @@ if (frames[0].animate) {
 
 
 //adapted from Val Head's demos on Easing: https://codepen.io/valhead/pen/mBxYQV?editors=0010
-/*                  function getPositions() {
-                    let positions = [];
-                    const startValue = 12.5;
-                    const endValue = 95;
-                    const changeInValue = endValue - startValue;
-                    const totalIterations = framesLength / 2;
+function getPositions() {
+  let positions = [];
+  const startValue = 12.5;
+  const endValue = 95;
+  const changeInValue = endValue - startValue;
+  const totalIterations = framesLength / 2;
 
-                    for (let i = 0; i < totalIterations; ++i) {
-                      positions.push(easeInQuad(i, startValue, changeInValue, totalIterations));
-                    }
-                    return [...(positions.slice().reverse()), ...positions];
-                  }
+  for (let i = 0; i < totalIterations; ++i) {
+    positions.push(easeInQuad(i, startValue, changeInValue, totalIterations));
+  }
+  return [...(positions.slice().reverse()), ...positions];
+}
 
-                  function easeInQuad(currentIteration, startValue, changeInValue, totalIterations) {
-                    return changeInValue * (currentIteration /= totalIterations) * currentIteration + startValue;
-                  }
+function easeInQuad(currentIteration, startValue, changeInValue, totalIterations) {
+  return changeInValue * (currentIteration /= totalIterations) * currentIteration + startValue;
+}
