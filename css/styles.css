@@ -1,12 +1,15 @@
-/*body {
-  text-align: center;
-  font-family: courier;
-  background-image: url("../assets/image.jpeg");
-  background-repeat: no-repeat;
-  background-size: 100%;
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  perspective: 100vmin;
+  background: radial-gradient(circle, hsl(177, 80%, 20%), hsl(177, 80%, 10%));
+  font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
 }
 
-.my_social {
+/*.my_social {
   position: absolute;
   top: 25px;
   left: 25px;
@@ -60,17 +63,6 @@ li {
   100% {
     transform: rotateX(var(--zoe-angle)) rotateY(360deg);
   }
-}
-
-body {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  perspective: 100vmin;
-  background: radial-gradient(circle, hsl(177, 80%, 20%), hsl(177, 80%, 10%));
-  font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
 }
 
 *, *::before, *::after {
