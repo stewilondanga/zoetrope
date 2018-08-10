@@ -11,10 +11,10 @@ const frames = Array.from(document.querySelectorAll('li'));
 const framesLength = frames.length;
 document.documentElement.style.setProperty('--frame-count', framesLength);
 
-/*const flashDuration = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--flash-duration'));
+const flashDuration = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--flash-duration'));
 const spinDuration = framesLength * flashDuration;
 
-let animations = {
+/*let animations = {
   spin: undefined
 }
 
