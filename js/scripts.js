@@ -14,11 +14,11 @@ document.documentElement.style.setProperty('--frame-count', framesLength);
 const flashDuration = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--flash-duration'));
 const spinDuration = framesLength * flashDuration;
 
-/*let animations = {
+let animations = {
   spin: undefined
 }
 
-var posY = getPositions();
+/*var posY = getPositions();
 
 frames.forEach((frame, i) => {
   frame.style.setProperty('--ry', `${(i / framesLength * 360)}deg`);
