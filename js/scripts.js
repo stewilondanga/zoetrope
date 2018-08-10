@@ -1,4 +1,4 @@
-/*var navigate = (function() {
+var navigate = (function() {
   $('.dd').toggle();
   $('.dd_btn').click(function() {
     var dataName = $(this).attr('data-name');
@@ -7,7 +7,7 @@
   });
 })();
 
-const frames = Array.from(document.querySelectorAll('li'));
+/*const frames = Array.from(document.querySelectorAll('li'));
 const framesLength = frames.length;
 document.documentElement.style.setProperty('--frame-count', framesLength);
 
