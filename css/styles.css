@@ -29,7 +29,7 @@ body {
   --zoe-angle: -2deg;
 }
 
-/*ol {
+ol {
   list-style: none;
   --w: 11vmin;
   --h: 8vmin;
@@ -41,7 +41,7 @@ body {
   animation: spin 300ms infinite linear;
 }
 
-li {
+/*li {
   position: absolute;
   top: 0;
   left: 0;
