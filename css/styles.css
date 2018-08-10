@@ -91,11 +91,11 @@ input[type=range] {
   max-width: 15rem;
 }
 
-/*.no-waapi form {
+.no-waapi form {
   display: none;
 }
 
-.containers {
+/*.containers {
   width: 520px;
   margin: 20px auto;
 }
